@@ -54,6 +54,8 @@ fi
 
 for i in $( seq 1 $NUMFILES)
 do
+        echo $WRITEDIR/${username}$i.txt
+        echo $WRITESTR
 	./writer "$WRITEDIR/${username}$i.txt" "$WRITESTR"
 done
 
