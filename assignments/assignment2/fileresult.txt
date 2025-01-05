@@ -1,0 +1,2 @@
+aarch64-none-linux-gnu-gcc -Wall -g -c writer.c
+aarch64-none-linux-gnu-gcc -Wall -g -o writer writer.o
