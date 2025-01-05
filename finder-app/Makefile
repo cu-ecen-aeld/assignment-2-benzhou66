@@ -1,6 +1,9 @@
-CROSS_COMPILE=aarch64-none-linux-gnu-
-CC=$(CROSS_COMPILE)gcc
+CC=gcc
 CFLAGS= -Wall -g
+
+ifdef CROSS_COMPILE
+CC=$(CROSS_COMPILE)gcc
+endif
 
 SRC=writer.c
 OBJ=$(SRC:.c=.o)
